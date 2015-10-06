@@ -534,6 +534,7 @@ function keydown(event) {
     } else if (event.keyCode === 75) { // k
       bushes = [];
       bricks = [];
+      doors = [];
     } else if (event.keyCode === 81) { // q
       openDoor();
     } else if (event.keyCode === 40) { // down
