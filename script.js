@@ -444,9 +444,9 @@ function update() {
   ticks++;
   if (ticks % hourLength === 0) {
     time++;
-    if (time === dayLength+1) {
+    if (time === dayLength + 1) {
       time = 0;
-      weekprog=(weekprog+1)%7;
+      weekprog = (weekprog + 1) % 7;
       console.log(days.length);
       if (days.length < 7) {
         dayName = 'Day of ' + generateDayName();
@@ -454,9 +454,9 @@ function update() {
       }else{
         dayName = days[weekprog];
       }
-      
     }
   }
+
   if (ticks % thoughtOccurences == 0) {
     randomThought();
   }
