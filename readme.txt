@@ -21,3 +21,5 @@ following in your computer terminal of favour:
 
 And open the resulting file 'bush.html' in the web browser that
 provides you with most pleasure.
+
+Alternatively click on this link: https://github.com/joshhartigan/bush-game/bush.html
