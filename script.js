@@ -429,6 +429,10 @@ function randomThought() {
     'You look at your creations and think about true love.',
     'You think about jokes.',
     'You laugh, but you don\'t know what you\'re laughing at.',
+    'You have a strong desire to press [k]',
+    'You wonder why everyone can see your thoughts',
+    'You are beginning to detest bushes',
+    'Mmmm, cake...'
   ];
 
   var index = Math.floor(Math.random() * (options.length - 1));
