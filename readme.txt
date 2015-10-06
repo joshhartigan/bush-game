@@ -1,10 +1,10 @@
-    ___           _         ___
-   / __\_   _ ___| |__     / _ \__ _ _ __ ___   ___
-  /__\// | | / __| '_ \   / /_\/ _` | '_ ` _ \ / _ \
- / \/  \ |_| \__ \ | | | / /_\\ (_| | | | | | |  __/
- \_____/\__,_|___/_| |_| \____/\__,_|_| |_| |_|\___|
+     ___           _         ___
+    / __\_   _ ___| |__     / _ \__ _ _ __ ___   ___
+   /__\// | | / __| '_ \   / /_\/ _` | '_ ` _ \ / _ \
+  / \/  \ |_| \__ \ | | | / /_\\ (_| | | | | | |  __/
+  \_____/\__,_|___/_| |_| \____/\__,_|_| |_| |_|\___|
 
-     --- Chapter I: The wonder of emptiness ---
+      --- Chapter I: The wonder of emptiness ---
 
 There are multiple philosophies implemented in this game.
 It is an attempt to raise the questions of whether or not
