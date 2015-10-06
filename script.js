@@ -588,26 +588,31 @@ function openDoor() {
   }
 }
 
+// ===== MISCELLANEOUS FUNCTIONS =====
 function generateDayName() {
-  var capitals = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  var lowercase = 'abcdefghijklmnopqrstuvwxyz';
-
-  var name = ''
-  var length = Math.floor(Math.random() * (15 - 8)) + 7;
-  var accentIndex = Math.floor(Math.random() * (6 - 5)) + 4;
-
-  var j = Math.floor(Math.random() * (lowercase.length - 1));
-  name += capitals[j];
-
+  var capitalcons = 'BCDFGHJKLMNPQRSTVWXZ';
+  var vowels = 'aeiouy';
+  var lowercase = capitalcons.toLowerCase();
+  var name = '';
+  var length = randint(7)+7;
+  var accentIndex = randint(2)*2+2;
+  name += choice(capitalcons);
   for (var i = 0; i < length; i++) {
-    j = Math.floor(Math.random() * (lowercase.length - 1));
-
     if (i === accentIndex) {
       name += '\'';
-    } else {
-      name += lowercase[j];
+    } else if ((i+1)%2){
+      name += choice(vowels);
+    } else{
+      name += choice(lowercase);
     }
   }
 
   return name;
+}
+// NoNotCo Random Functions
+function randint(max){
+  return Math.floor(Math.random()*max);
+}
+function choice(iterable){
+  return iterable[randint(iterable.length)];
 }
