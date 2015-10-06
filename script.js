@@ -120,7 +120,7 @@ var Player = {
   height: 10,
   x: width / 2,
   y: height - 10,
-  color: '#591e51'
+  color: '#fa6900'
 };
 
 // ===== DRAW FUNCTIONS =====
@@ -129,7 +129,7 @@ var Player = {
 // master is always being called and therefore manages
 // all the graphic work.
 function drawSky() {
-  ctx.fillStyle = '#98def5';
+  ctx.fillStyle = '#a7dbd8';
   ctx.fillRect(0, 0, width, height);
 }
 
@@ -142,9 +142,9 @@ function drawBushes() {
   for (var i = 0; i < bushes.length; i++) {
     var bush = bushes[i];
     if (bush.isBurning) {
-      ctx.fillStyle = 'red';
+      ctx.fillStyle = '#f40410';
     } else {
-      ctx.fillStyle = 'forestgreen';
+      ctx.fillStyle = '#7db362';
     }
     ctx.fillRect(bush.x, bush.y, bush.width, bush.height);
   }
@@ -153,7 +153,7 @@ function drawBushes() {
 function drawBricks() {
   for (var i = 0; i < bricks.length; i++) {
     var brick = bricks[i];
-    ctx.fillStyle = '#E0D0B6';
+    ctx.fillStyle = '#e0e4cc';
     ctx.fillRect(brick.x, brick.y, brick.width, brick.height);
   }
 }
