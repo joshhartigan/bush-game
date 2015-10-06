@@ -7,6 +7,8 @@ var FPS = 60;
 
 var ticks = 0;
 var time = 0;
+var days = ['Day of New Beginnings'];
+var weekprog = 0;
 var dayName = 'Day of New Beginnings';
 
 var burnSpeed = 350;
@@ -442,12 +444,19 @@ function update() {
   ticks++;
   if (ticks % hourLength === 0) {
     time++;
-    if (time === dayLength + 1) {
+    if (time === dayLength+1) {
       time = 0;
-      dayName = 'Day of ' + generateDayName();
+      weekprog=(weekprog+1)%7;
+      console.log(days.length);
+      if (days.length < 7) {
+        dayName = 'Day of ' + generateDayName();
+        days.push(dayName);
+      }else{
+        dayName = days[weekprog];
+      }
+      
     }
   }
-
   if (ticks % thoughtOccurences == 0) {
     randomThought();
   }
