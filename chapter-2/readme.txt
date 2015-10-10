@@ -11,5 +11,11 @@ programming skill in the best programming language, C.
 
 === HOW TO RUN THE GAME ===
 
+First, install the SDL2 library.
+There is information on the internet that explains
+how to do this. Then,
+
+`$ git clone https://github.com/joshhartigan/bush-game`
+`$ cd bush-game/chapter-2`
 `$ make`
 `$ ./saddle`
