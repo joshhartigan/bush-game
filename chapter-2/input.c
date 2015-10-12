@@ -39,8 +39,8 @@ void handle_input() {
     game_running = false;
   }
 
-  if (keys[SDLK_w]) player.y -= 1;
-  if (keys[SDLK_a]) player.x -= 1;
-  if (keys[SDLK_s]) player.y += 1;
-  if (keys[SDLK_d]) player.x += 1;
+  if (keys[SDLK_w]) move_player('w');
+  if (keys[SDLK_a]) move_player('a');
+  if (keys[SDLK_s]) move_player('s');
+  if (keys[SDLK_d]) move_player('d');
 }

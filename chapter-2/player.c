@@ -3,6 +3,7 @@
 #include "saddle.h"
 
 #include <SDL2/SDL.h>
+#include <stdio.h>
 
 Player player;
 
@@ -33,4 +34,24 @@ void draw_player() {
     255);
 
   SDL_RenderFillRect(renderer, &p_rect);
+}
+
+void move_player(char key) {
+  switch (key) {
+    case 'w':
+      player.y--;
+      break;
+    case 'a':
+      player.x--;
+      break;
+    case 's':
+      player.y++;
+      break;
+    case 'd':
+      player.x++;
+      break;
+    default:
+      printf("Error at %d (player.c): Invalid key (char) to move_player()\n'",
+          ticks);
+  }
 }

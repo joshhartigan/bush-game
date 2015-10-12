@@ -19,7 +19,7 @@ typedef struct {
 Player player;
 
 void init_player();
-
 void draw_player();
+void move_player(char key);
 
 #endif

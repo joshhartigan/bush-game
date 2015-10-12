@@ -5,6 +5,7 @@
 #include <stdbool.h>
 
 bool game_running;
+int ticks;
 
 int WINDOW_WIDTH;
 int WINDOW_HEIGHT;

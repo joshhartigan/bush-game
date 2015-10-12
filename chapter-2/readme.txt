@@ -17,5 +17,6 @@ how to do this. Then,
 
 `$ git clone https://github.com/joshhartigan/bush-game`
 `$ cd bush-game/chapter-2`
+`$ mkdir bin`
 `$ make`
 `$ ./saddle`
