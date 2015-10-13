@@ -4,6 +4,7 @@
 
 #include <SDL2/SDL.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <time.h>
 
 Apple apples[MAX_APPLES];
@@ -15,7 +16,8 @@ Apple default_apple = {
   .height = 10,
   .red = 0,
   .green = 255,
-  .blue = 0
+  .blue = 0,
+  .eaten = false
 };
 
 void init_apples() {
@@ -37,13 +39,24 @@ void draw_apples() {
     a_rect.w = apples[i].width;
     a_rect.h = apples[i].height;
 
-    SDL_SetRenderDrawColor(
-      renderer,
-      apples[i].red,
-      apples[i].green,
-      apples[i].blue,
-      255);
+    if (!apples[i].eaten) {
+      SDL_SetRenderDrawColor(
+        renderer,
+        apples[i].red,
+        apples[i].green,
+        apples[i].blue,
+        255);
+    } else {
+      SDL_SetRenderDrawColor(
+        renderer,
+        0, 0, 0,
+        255);
+    }
 
     SDL_RenderFillRect(renderer, &a_rect);
   }
+}
+
+void eat_apple(int index) {
+  apples[index].eaten = true;
 }

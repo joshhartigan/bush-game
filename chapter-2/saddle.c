@@ -32,18 +32,24 @@ int main() {
   SDL_Quit();
 }
 
+void update() {
+  update_keys();
+  handle_input();
+  handle_collisions();
+  ticks++;
+}
+
+void draw() {
+  blank_screen(&renderer);
+  draw_apples();
+  draw_player();
+  SDL_RenderPresent(renderer);
+}
+
 void game_loop() {
   while (game_running) {
-    // do things
-    update_keys();
-    handle_input();
-    handle_collisions();
-    ticks++;
-    // draw things
-    blank_screen(&renderer);
-    draw_apples();
-    draw_player();
-    SDL_RenderPresent(renderer);
+    update();
+    draw();
     // keep things at a normal pace
     SDL_Delay(10);
   }

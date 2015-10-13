@@ -7,21 +7,20 @@ int player_on_apple() {
   for (int i = 0; i < MAX_APPLES; i++) {
     Apple a = apples[i];
 
-    if (player.x < a.x + a.width &&
-        player.x + a.width > a.x &&
-        player.y < a.y + a.height &&
-        a.height + player.y > a.y) {
+    if (player.x                 < a.x + a.width  &&
+        player.x + player.width  > a.x            &&
+        player.y                 < a.y + a.height &&
+        player.y + player.height > a.y) {
       return i;
     }
   }
 
-  return 0;
+  return -1;
 }
 
 void handle_collisions() {
   int apple_collision = player_on_apple();
-  if (apple_collision > 0) {
-    apples[apple_collision].red = 255;
-    apples[apple_collision].green = 0;
+  if (apple_collision > -1) {
+    eat_apple(apple_collision);
   }
 }
