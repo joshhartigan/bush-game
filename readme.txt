@@ -8,6 +8,6 @@
 CHAPTER 1: "The wonder of emptiness"
     - Written in JavaScript
     - Construction-Oriented
-CHAPTER 2: "The beauty of complexity"
+CHAPTER 2: "The beauty of intricacy"
     - Written in C
     - Work in progress

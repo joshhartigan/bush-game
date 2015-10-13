@@ -4,7 +4,7 @@
   / \/  \ |_| \__ \ | | | / /_\\ (_| | | | | | |  __/
   \_____/\__,_|___/_| |_| \____/\__,_|_| |_| |_|\___|
 
-     --- Chapter II: The beauty of complexity ---
+     --- Chapter II: The beauty of intricacy ---
 
 This game is currently just a way for me to improve my
 programming skill in the best programming language, C.
